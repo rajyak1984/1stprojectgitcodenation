@@ -1,0 +1,61 @@
+https://fonts.googleapis.com/css?family=Poppins:900;
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+wrapper {
+    display: flex;
+    justify-content: center;
+}
+.cta {
+    display: flex;
+    padding: 10px, 45px;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #6225e6;
+    transform: skewX(-15deg);
+    box-shadow: 6px 6px 0px black;
+}
+.cta:focus {
+    outline: none;
+}
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fbc638;
+}
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+.cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+span {
+    transform: skewX(15deg);
+}
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+path.one {
+    transform: translateX(-60%);
+}
+path.two {
+    transform: translateX(-30%);
+}
+.cta:hover path.one {
+    transform: translateX(0%);
+}
+.cta:hover path.two {
+    transform: translateX(0%);
+}
